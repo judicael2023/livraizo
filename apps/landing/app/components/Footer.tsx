@@ -8,8 +8,8 @@ import { WhatsappOutline, FacebookOutline } from '@axazara/raiton-icons';
 export function Footer() {
   return (
     <Box className="bg-neutral-10 py-10">
-      <Box className="max-w-7xl mx-auto">
-        <Box className="flex justify-between items-center">
+      <Box className="md:max-w-7xl max-w-xs mx-auto layout">
+        <Box className="flex md:flex-row flex-col justify-between md:items-center lg:space-y-0 space-y-4">
           <Box>
             <Image src="/assets/livraizo-logo.svg" alt="logo" width={200} height={200} />
           </Box>
@@ -25,11 +25,10 @@ export function Footer() {
         <Box className="mt-4 mb-5">
           <Divider className="border-white" />
         </Box>
-        <Box className="flex justify-between items-center">
+        <Box className="lg:flex lg:flex-row flex-col gap-3 justify-between items-center">
           <Box className="flex">
             <span className="mr-1 text-white text-heading-05-sm">©</span>
             <Text className="text-white text-heading-05-sm">
-              {' '}
               {new Date().getFullYear()} Livraizo, all rights reserved.
             </Text>
           </Box>

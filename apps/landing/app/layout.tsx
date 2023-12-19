@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/tailwind.css';
+import './css/custom.css';
 import type { Metadata } from 'next';
 import { AppProviders, Footer } from './components';
 
