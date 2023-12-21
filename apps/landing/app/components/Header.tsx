@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Box } from '@axazara/raiton-atoms';
-import { CloseCircleOutline, ArrowRightOutline } from '@axazara/raiton-icons';
+import { CloseCircleOutline } from '@axazara/raiton-icons';
 
 export function Header() {
   return (
@@ -15,10 +15,10 @@ export function Header() {
           <Image src="/assets/livraizo-logo.svg" width={132} height={80} alt="logo" />
         </Link>
         <Box className="ml-12 space-x-5">
-          <Link href="" className="hover:text-primary-50 layout text-p-02-medium text-neutral-30">
+          <Link href="" className="text-p-02-medium text-white">
             About
           </Link>
-          <Link href="/" className="hover:text-primary-50 layout text-p-02-medium text-neutral-30">
+          <Link href="/" className="text-p-02-medium text-white">
             A propos
           </Link>
         </Box>
