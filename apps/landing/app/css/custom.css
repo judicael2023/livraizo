@@ -82,3 +82,31 @@
         transform: translateX(6px);
     }
 }
+
+.Raiton-Button-root:not(.no-motion):hover .Raiton-Button-rightIcon {
+    animation: direct 0.6s infinite;
+    animation-direction: alternate;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 100ms;
+}
+
+.sticky-header {
+    position: sticky;
+    top: -1px;
+    left: 0;
+    width: 100%;
+}
+
+.method-animation:hover {
+    animation-play-state: paused!important;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-272px * calc(var(--slider-item-count) / 2)));
+  }
+}

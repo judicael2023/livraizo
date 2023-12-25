@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Box, Button, Text } from '@axazara/raiton-atoms';
-import { Header } from './components';
+import { DeliversCardSlider, Header } from './components';
 
 export default function Page(): JSX.Element {
   return (
@@ -27,6 +27,9 @@ export default function Page(): JSX.Element {
               Devenir un livreur
             </Button>
           </Box>
+        </Box>
+        <Box className="mb-10">
+          <DeliversCardSlider />
         </Box>
         <Box className="bg-white pt-10">
           <Box className="md:max-w-5xl max-w-xs mx-auto mb-20">
