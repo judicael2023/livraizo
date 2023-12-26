@@ -9,7 +9,7 @@ import { CloseCircleOutline } from '@axazara/raiton-icons';
 
 export function Header() {
   return (
-    <header className={`z-20 bg-black font-poppins transition-all duration-300`}>
+    <header className={`z-20 font-poppins transition-all duration-300`}>
       <nav className="flex flex-row justify-between items-center layout mx-auto w-full py-6">
         <Link href="/">
           <Image src="/assets/livraizo-logo.svg" width={132} height={80} alt="logo" />
@@ -46,10 +46,16 @@ export function Header() {
             </label>
           </li>
           <li className="flex items-center justify-between space-y-4 lg:hidden action-button-container">
-            <Button variant="subtle" className="text-white">
+            <Link href="" className="text-p-02-medium text-black">
+              About
+            </Link>
+            <Link href="/" className="text-p-02-medium text-black">
+              A propos
+            </Link>
+            <Button variant="subtle" className="text-black">
               Log in
             </Button>
-            <Button radius={64} variant="filled" className="bg-white text-black">
+            <Button radius={64} variant="filled" className="text-black">
               Créer un compte
             </Button>
           </li>
